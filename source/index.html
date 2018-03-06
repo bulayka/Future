@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Тестовое/future</title>
+    <link rel="preload" href="css/style.css" as="style">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--personal-account">
+              <a class="main-nav__link  main-nav__link--personal-account" href="#">
+                Личный кабинет
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link  main-nav__link--payments" href="#">
+                Платежи
+              </a>
+            </li>
+            <li class="main-nav__item  main-nav__item--history">
+              <a class="main-nav__link  main-nav__link--history" href="#">
+                История платежей
+              </a>
+            </li>
+            <li class="main-nav__item  main-nav__item--settings">
+              <a class="main-nav__link  main-nav__link--settings" href="#">
+                Настройки
+              </a>
+            </li>
+            <li class="main-nav__item  main-nav__item--exit">
+              <a class="main-nav__link  main-nav__link--exit" href="#">
+                Выйти
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__wrapper">
+        <section class="payment">
+          <p class="payment__title">Информация по оплате:</p>
+          <ul class="payment__parametres">
+            <li class="payment__item payment__item--number">
+              <span>Номер счета:</span>87123658716587
+            </li>
+            <li class="payment__item payment__item--summa">
+              <span>Сумма платежа:</span>100 руб.
+            </li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2 class="card__title">Данные банковской карты</h2>
+            <form class="form" method="post">
+              <fieldset class="form__fieldset form__fieldset--card">
+                <span class="form__fieldset-title">Номер карты</span>
+                <ul class="form__list">
+                  <li class="form__list-item">
+                    <input class="form__input form__input--number" type="text" name="number" pattern="[0-9]{4}" >
+                    <input class="form__input form__input--number" type="text" name="number" pattern="[0-9]{4}" >
+                    <input class="form__input form__input--number" type="text" name="number" pattern="[0-9]{4}" >
+                    <input class="form__input form__input--number" type="text" name="number" pattern="[0-9]{4}" >
+                  </li>
+                </ul>
+                <span class="form__fieldset-title">Срок действия</span>
+                <ul class="form__list">
+                  <li class="form__list-item form__list-item--duration">
+                    <select class="form__input form__input--month" type="text" name="number" >
+                      <option value="01">01</value>
+                      <option value="02">02</value>
+                      <option value="03">03</value>
+                      <option value="04" selected>04</value>
+                      <option value="05">05</value>
+                      <option value="06">06</value>
+                      <option value="07">07</value>
+                      <option value="09">08</value>
+                      <option value="08">09</value>
+                      <option value="10">10</value>
+                      <option value="11">11</value>
+                      <option value="12">12</value>
+                    </select>
+                    <select class="form__input form__input--year" type="text" name="number">
+                      <option value="2018">2018</option>
+                      <option value="2019">2019</option>
+                      <option value="2020">2020</option>
+                    </select>
+                  </li>
+                </ul>
+                <input class="form__input form__input--owner" type="text" name="owner" pattern="[A-Za-z]{4,}" placeholder="Держатель карты">
+              </fieldset>
+              <fieldset class="form__fieldset form__fieldset--cvv">
+                <ul class="form__list">
+                  <li class="form__list-item form__list-item--cvv">
+                    <label for="cvv">Код CVV2 / CVC2</label>
+                      <input class="form__input form__input--cvv" type="text" id="cvv" name="cvv" pattern="[0-9]{3}" >
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+                        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                          <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01">
+                          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                          <rdf:Description rdf:about=""/>
+                        </rdf:RDF>
+                      </x:xmpmeta>
+                      <?xpacket end="w"?></metadata>
+                      <image id="подсказка" width="26" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABX1BMVEW+xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs++xs8AAACUL6EOAAAAc3RSTlMADy4zKAYmjNnw0czX+cZxEZxzBDmO7ogIeO1jAg79UIYeRvFfdtIQN/NBMCBVqplmRLurbiTbdyK+1CsL9AE6xR/gLRbpId77B0u0v0CFemmWCvUbWKd7ndw+/pKPPXlZ9pUdoC9P2GdCKYqwR73f1nUjXWxdLAAAAAFiS0dEdN9tqG0AAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiAhwKJRl2WFafAAABO0lEQVQoz2NgQABGJmYWVgZMwMbOwcnFzcPLxy+AKsEsyCHEBmIIi4iKiUsgyUhKScvAObKicvJwjgKXIooZSsoqUJaqmjqaxRqaWmBaW0wHw1G6emBK3wDKN9Qz0tOFso1NgISpmTCEZ1BsZG5ULA7hsMgB3SVuDuEIiIEM0S+2gHAtgbZZWUPYFvqGIEOLDSFcflEGG1s7ZPv1xaCBYe/AwMKDIlMMc5OjE4OzGooemAyDiyuDmzuSb+B6QA5nEPbwhHPNixHKvLwZGHx84VwLQ4SUnz8DQ0AgnGtoDmfamZkyMAQFh2AxMDQMRIZHYIQug2dkFFhvtDyGVEwsNOaC49Bk4gOhQc6QkKiCYlpSYDIiVlO8U+FuS0uPRQnWjGg+80xTnay07MicXDTj7UTE88zyC3IKi2AiAFexK44wvNZGAAAAAElFTkSuQmCC"/>
+                    </svg>
+                  </li>
+                </ul>
+              </fieldset>
+              <input class="form__btn" type="submit" value="Оплатить">
+            </form>
+        </section>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <p class="page-footer__text">
+          Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.
+        </p>
+        <p class="page-footer__text">
+          Выклинивание абсолютно аккумулирует твердый pад иотелескоп Максвелла.
+        </p>
+        <p class="page-footer__text">
+          Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.
+        </p>
+        <p class="page-footer__text page-footer__text--last">
+          Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/validation.js"></script>
+  </body>
+</html>
