@@ -15,6 +15,7 @@ var include = require("posthtml-include");
 var run = require("run-sequence");
 var del = require("del");
 var pump = require("pump");
+var uglify = require("gulp-uglify");
 
 gulp.task("style", function() {
   gulp.src("source/less/style.less")
@@ -34,6 +35,16 @@ gulp.task("htmlminify", function() {
   return gulp.src("source/*.html")
   .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest("build"))
+});
+
+gulp.task("compress", function (cb) {
+  pump([
+        gulp.src("source/js/*.js"),
+        uglify(),
+        gulp.dest("build/js")
+    ],
+    cb
+  );
 });
 
 gulp.task("images", function() {
@@ -74,6 +85,7 @@ gulp.task("build", function(done) {
     "copy",
     "style",
     "htmlminify",
+    "compress",
     "html",
     "images",
     done
@@ -92,16 +104,3 @@ gulp.task("serve", function() {
   gulp.watch("source/less/**/*.less", ["style"]);
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
 });
-
-// gulp.task("serve", ["style"], function() {
-//   server.init({
-//     server: "source/",
-//     notify: false,
-//     open: true,
-//     cors: true,
-//     ui: false
-//   });
-//
-//   gulp.watch("source/less/**/*.less", ["style"]);
-//   gulp.watch("source/*.html").on("change", server.reload);
-// });

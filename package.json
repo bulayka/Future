@@ -17,6 +17,7 @@
     "gulp-postcss": "^7.0.1",
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
     "posthtml-include": "^1.1.0",
     "pump": "^3.0.0",
     "run-sequence": "^2.2.1",
