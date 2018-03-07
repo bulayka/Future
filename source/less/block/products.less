@@ -56,13 +56,56 @@
 .products__color {
   font-size: 20px;
   margin-top: 25px;
+  margin-bottom: 23px;
 }
+
+.products__color-list {
+  position: relative;
+  width: 475px;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.products__color-item {
+  position: relative;
+    margin-right: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .active-color {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 13px;
+      width: 18px;
+      height: 6px;
+      background-color: #ffffff;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 21px;
+      width: 30px;
+      height: 6px;
+      background-color: #ffffff;
+      transform: rotate(-45deg);
+    }
+  }
 
 .products__variants {
   width: 350px;
   font-size: 14px;
-  margin-top: 25px;
-  margin-bottom: 55px;
+  margin-top: 21px;
+  margin-bottom: 57px;
 }
 
 .products__btn {
